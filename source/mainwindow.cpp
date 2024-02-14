@@ -20,6 +20,16 @@
 MainWindow::MainWindow(const wxString& title, int width, int height)
   : wxFrame(NULL, wxID_ANY, title, wxDefaultPosition, wxSize(width, height))
 {
+  // add ze panel to ze frame
+  m_Panel = new wxPanel(this, wxID_ANY);
+
+  // text box heer
+  m_Textbox = new wxTextCtrl
+  (
+    m_Panel, wxID_ANY, wxT("hello world"), 
+    wxPoint(5,5), wxSize(160, 24)
+  );
+
   /* Center the window on the screen. */
   Centre();
 } /*** end of MainWindow ***/

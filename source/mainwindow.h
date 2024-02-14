@@ -20,7 +20,8 @@ class MainWindow : public wxFrame
 public:
   MainWindow(const wxString& title, int width, int height);
 private:
-
+  wxPanel * m_Panel;
+  wxTextCtrl * m_Textbox;
 };
 
 #endif /* MAINWINDOW_H */
