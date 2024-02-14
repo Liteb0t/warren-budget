@@ -26,7 +26,7 @@ MainWindow::MainWindow(const wxString& title, int width, int height)
   // text box heer
   m_Textbox = new wxTextCtrl
   (
-    m_Panel, wxID_ANY, wxT("hello world!"), 
+    m_Panel, wxID_ANY, wxT("hello world!!"), 
     wxPoint(5,5), wxSize(160, 24)
   );
 
